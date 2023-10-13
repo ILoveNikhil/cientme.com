@@ -1,0 +1,20 @@
+/* 1.=================== Laptop  above responsive 1367px above ================================== */
+@media (min-width:1367px) {
+    
+}
+/* 2.============ Laptop below responsive 1360px below ============================================ */
+@media (max-width:1365px) {
+    
+}
+/* 3.============== Big Tablet responsive 800px below =================================== */
+@media (max-width:800px) {
+    
+}
+/* 4.================= Normal Tablet responsive  600px below ========================= */
+@media (max-width:600px) {
+    
+}
+/* 5.=============== Mobile responsive 440px below ========================= */
+@media (max-width:440px) {
+    
+}

@@ -1,0 +1,130 @@
+.form_container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_container form{
+    width: 25%;
+    min-height: 70vh;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 1px grey;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.form_container form img{
+    width: 70%;
+    margin: .1rem auto;
+    display: block;
+}
+.form_container form h6{
+    text-align: center;
+    color: rgb(81, 80, 80);
+    font-size: 85%;
+    font-weight: 600;
+    margin: .7rem auto;
+}
+.form_container form .input_data_box{
+   position: relative;
+   display: flex;
+   top: 1rem;
+}
+.form_container form .input_data_box input{
+  width: 80%;
+  height: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+  margin: .5rem auto;
+  border: 1px solid #ccc;
+  border-radius: .3rem;
+  padding: .3rem; 
+  font-size: .8rem;
+  font-weight: 500;
+}
+.form_container form .input_data_box .eye_icon{
+    position: absolute;
+    width: 10%;
+    top: 25%;
+    right: 13%;
+  /* transform: translateY(-50%); */
+  cursor: pointer;
+ } 
+.form_container form .input_data_box input[type="submit"]{
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+    background-color: rgba(224, 32, 32, 0.963);
+    cursor: pointer;
+    position: relative;
+    top: 0.5rem;
+}
+.form_container form a{
+    text-decoration: none;
+    color:#498ef7;
+    font-size: 120%;
+    font-weight: 600;
+    display: flex;
+    margin: .3rem 0 ;
+    align-items: center;
+    justify-content: center;
+  }
+.form_container form a:hover{
+    color:#0c40fc;
+  }
+/* 1.=================== Laptop  above responsive 1367px above ================================== */
+@media (min-width:1367px) {
+    .form_container form{
+        min-height: 50vh;
+    }
+}
+/* 2.============ Laptop below responsive 1360px below ============================================ */
+@media (min-width:1001px) and (max-width:1365px) {
+    .form_container form{
+        width: 35%;        
+    }
+}
+/* 2.============ LBig Tablet responsive 1000px below ============================================ */
+@media (min-width:801px) and (max-width:1000px) {
+    .form_container form{
+        width: 45%;
+        min-height: 50vh;
+    }
+}
+/* 3.============== Normal Tablet responsive 800px below =================================== */
+@media (min-width:601px) and (max-width:800px) {
+    .form_container form{
+        width: 45%;
+        min-height: 50vh;
+        padding: 1rem;
+    }
+}
+/* 4.================= small Tablet responsive  600px below ========================= */
+@media (min-width:401px) and (max-width:600px) {
+    .form_container form{
+        width: 55%;
+        min-height: 70vh;
+    }
+}
+/* 5.=============== Mobile responsive 440px below ========================= */
+@media (max-width:440px) {
+    .form_container form{
+        width: 85%;
+        min-height: 60vh;
+    }
+    .form_container form img{
+        width: 50%;
+    }
+    .form_container form h6{
+        font-size: 75%;
+        margin: .2rem auto;
+    }
+    .form_container form .input_data_box input{
+      width: 90%;
+      margin: .2rem auto;
+      padding: .2rem; 
+    }
+    
+}

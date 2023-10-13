@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup form html css</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "poppins", sans-serif;
+      }
+      .form_container {
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        background-color: whitesmoke;
+      }
+      .form_container .signupForm {
+        width: 30%;
+        height: 50vh;
+        align-items: center;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        position: relative;
+        background-color: white;
+      }
+      .form_container .signupForm img {
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+      }
+      .form_container .signupForm h6 {
+        text-align: center;
+      }
+      .form_container .signupForm .input_field {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0.2rem 0;
+      }
+      .form_container .signupForm .input_field input {
+        width: 100%;
+        height: 2rem;
+        margin: 0 auto;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        outline: 0;
+        border-radius: 0.5rem;
+      }
+      .form_container .signupForm .password_input .eye_toggle {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0rem;
+        z-index: 10;
+      }
+      /* responsive @media Query */
+      /* Big Tablet devices ( normal tablet, 900px and down) */
+      @media (max-width: 900px) {
+        .form_container .signupForm {
+          width: 50%;
+        }
+      }
+      /* Extra small devices ( small  tablet, 600px and down) */
+      @media (max-width: 600px) {
+        .form_container .signupForm {
+          width: 60%;
+        }
+        /* Extra small devices ( normal phones, 440px and down) */
+        @media (max-width: 440px) {
+          .form_container .signupForm {
+            width: 80%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form_container">
+      <form class="signupForm">
+        <img src="./img/logo.jpg" alt="logo" />
+        <h6>Sign Up to experience cientme</h6>
+        <!-- full Name -->
+        <div class="input_field">
+          <input type="text" placeholder="Full Name*" required />
+        </div>
+        <!-- user Name -->
+        <div class="input_field">
+          <input type="text" placeholder="UserName*" required />
+        </div>
+        <!-- phoneNumber -->
+        <div class="input_field">
+          <input type="tel" placeholder="Phone Number*" required />
+        </div>
+        <!-- email -->
+        <div class="input_field">
+          <input type="email" placeholder="Email*" required />
+        </div>
+        <!-- password -->
+        <div class="input_field password_input">
+          <input type="password" placeholder="Password*" required />
+          <!-- eye toggle to view password text -->
+          <span class="eye_toggle">
+            <img src="./img/eye-open.png" alt="" />
+          </span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
